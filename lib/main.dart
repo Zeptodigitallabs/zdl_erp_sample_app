@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
         home: RoleSelectionView(),
       ),
     );
-    return MaterialApp(
+    /*return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -53,7 +53,7 @@ class MyApp extends StatelessWidget {
         child: RoleSelectionView(),
       ),
       //home: RoleSelectionView(),
-    );
+    );*/
   }
 }
 

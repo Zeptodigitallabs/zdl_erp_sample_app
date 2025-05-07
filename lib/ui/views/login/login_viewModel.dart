@@ -46,7 +46,9 @@ class LoginViewModel extends ChangeNotifier {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString(keyAppBaseUrl, appBaseUrl);
     String? appUrl = prefs.getString(keyAppBaseUrl);
-    print("AppUrl===>$appUrl");
+    if (kDebugMode) {
+      print("AppUrl===>$appUrl");
+    }
     notifyListeners();
   }
 
