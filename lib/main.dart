@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+import 'ui/views/login/login_viewModel.dart';
+import 'ui/views/role_selection/role_selection_view.dart';
+import 'ui/views/role_selection/role_selection_viewModel.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -10,7 +16,18 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    return MultiProvider(
+        providers: [
+          ChangeNotifierProvider(create: (context) => RoleSelectionViewModel()),
+          ChangeNotifierProvider(create: (context) => LoginViewModel()),
+        ],
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: RoleSelectionView(),
+      ),
+    );
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -30,7 +47,12 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      //home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home:ChangeNotifierProvider(
+        create: (_) => RoleSelectionViewModel(),
+        child: RoleSelectionView(),
+      ),
+      //home: RoleSelectionView(),
     );
   }
 }
