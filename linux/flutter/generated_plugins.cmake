@@ -3,6 +3,8 @@
 #
 
 list(APPEND FLUTTER_PLUGIN_LIST
+  url_launcher_linux
+  zdl_erp_sdk
 )
 
 list(APPEND FLUTTER_FFI_PLUGIN_LIST
