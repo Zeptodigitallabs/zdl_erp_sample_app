@@ -37,7 +37,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
 
-  zdl_erp_sdk: ^0.0.1
+  zdl_erp_sdk: ^0.0.3
     #path: ../zdl_erp_sdk
 
 dev_dependencies:
