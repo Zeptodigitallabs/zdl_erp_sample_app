@@ -616,10 +616,11 @@ packages:
   zdl_erp_sdk:
     dependency: "direct main"
     description:
-      path: "../zdl_erp_sdk"
-      relative: true
-    source: path
-    version: "0.0.1"
+      name: zdl_erp_sdk
+      sha256: e10bc28c211548e6fae84e5d19e0b37b7a8a08c2ea411021d6f1edf38abb6e7e
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.5"
 sdks:
   dart: ">=3.8.0 <4.0.0"
   flutter: ">=3.27.0"

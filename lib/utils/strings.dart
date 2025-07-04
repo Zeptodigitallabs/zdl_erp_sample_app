@@ -23,7 +23,8 @@ const String dseAppName = 'MyDSE';
 const String zlerpAppBaseUrl = 'https://flutter.zeptolearn.com/';
 
 //const String schoolerpAppBaseUrl = 'https://flutter.zeptolearn.com/';
-const String schoolerpAppBaseUrl = 'http://192.168.1.22:8080/';
+//const String schoolerpAppBaseUrl = 'http://192.168.1.22:8080/';
+const String schoolerpAppBaseUrl = 'https://erpsdk.zeptolearn.com/';
 
 const String aksharaAppBaseUrl = 'https://flutter.zeptolearn.com/';
 
